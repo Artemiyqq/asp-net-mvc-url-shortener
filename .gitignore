@@ -39,12 +39,6 @@ bld/
 [Oo]bj/
 [Ll]og/
 
-# Visual Studio code coverage
-*.coverage
-*.coveragexml
-*.opencover
-*.runsettings
-
 # Build tooling
 msbuild.log
 msbuild.err
@@ -52,3 +46,8 @@ msbuild.err
 # Roslyn
 *.ruleset
 *.editorconfig
+
+# Docker
+/Urlshortener.App/appsettings.Development.json
+/Urlshortener.App/docker-compose.yml
+/Urlshortener.App/Dockerfile
