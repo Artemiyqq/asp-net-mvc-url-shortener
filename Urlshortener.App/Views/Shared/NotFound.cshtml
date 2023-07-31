@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Error 404 ";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/not-found-page.css" />
+}
+
+<div class="center">
+    <div class="large-text">ERROR 404</div>
+    <div class="small-text">It seems that this URL does not exist</div>
+    <a href="@Url.Action("Index", "Url")">Return to main page</a>
+</div>

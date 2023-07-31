@@ -1,0 +1,54 @@
+# .NET and Visual Studio related files
+**/bin/
+**/obj/
+**/*.vsconfig
+**/*.vsix
+**/*.vssettings
+*.suo
+*.user
+*.cache
+*.log
+*.vspscc
+*.vssscc
+*.psess
+*.pssc
+*.ipch/
+.vs/
+_UpgradeReport_Files/
+TestResults/
+[Tt]est[Rr]esult*/
+*.VisualState.xml
+_ReSharper.*
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+*.resharper.user
+*.resharper
+*.sln.docstates
+
+# NuGet
+*.nuget.props
+*.nuget.targets
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio code coverage
+*.coverage
+*.coveragexml
+*.opencover
+*.runsettings
+
+# Build tooling
+msbuild.log
+msbuild.err
+
+# Roslyn
+*.ruleset
+*.editorconfig

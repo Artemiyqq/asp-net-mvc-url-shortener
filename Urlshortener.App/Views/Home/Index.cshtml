@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "URL Shortener";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/main-page.css" />
+}
+
+<form method="post" action="/Url/Shorten">
+    <h1>Enter your link and click the button</h1>
+    <div id="box">
+        <input type="url" id="urlInput" name="url" required>
+        <button type="submit">Shorten</button>
+    </div>
+</form>

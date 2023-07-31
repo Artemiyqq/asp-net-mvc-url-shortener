@@ -1,0 +1,24 @@
+﻿.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.large-text {
+    font-size: 5em;
+    text-align: center;
+}
+
+.small-text {
+    font-size: 2em;
+    text-align: center;
+    color: dimgrey;
+}
+
+a {
+    margin-top: 5px;
+    font-size: 1.3em;
+    text-align: center;
+}

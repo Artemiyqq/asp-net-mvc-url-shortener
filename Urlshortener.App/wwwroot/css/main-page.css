@@ -1,0 +1,109 @@
+﻿h1 {
+    font-size: 2.3em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+#box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 10%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="url"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 70%;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+}
+
+button:active {
+    border-color: #000000;
+    transform: scale(.9)
+}
+
+@media (1400px < width < 1600px) {
+    #box {
+        width: 45%;
+    }
+}
+
+@media (1250px < width < 1400px) {
+    #box {
+        width: 50%;
+    }
+}
+
+@media (1050px < width < 1250px) {
+    #box {
+        width: 60%;
+    }
+}
+
+@media (900px < width < 1050px) {
+    #box {
+        width: 65%;
+    }
+}
+
+@media (700px < width < 900px) {
+    #box {
+        width: 75%;
+    }
+}
+
+@media (600px < width <=700px) {
+    #box {
+        width: 85%;
+    }
+}
+
+@media (400px <=width <=600px) {
+    #box {
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2.1em;
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 1.9em;
+    }
+}
+
+@media (max-width: 600px) {
+    input[type="url"] {
+        width: 80%;
+    }
+}

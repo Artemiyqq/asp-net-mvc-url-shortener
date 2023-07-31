@@ -1,0 +1,29 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: UrlShortenerPostgres
+    restart: always
+    environment:
+        POSTGRES_USER: entityframework
+        POSTGRES_PASSWORD: secretpass169
+        POSTGRES_DB: url_shortener_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  url-shortener:
+    image: url-shortener-asp-net-mvc:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: UrlShortener
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:

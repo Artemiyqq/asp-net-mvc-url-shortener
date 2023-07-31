@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Result";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/result-page.css" />
+}
+
+<div id="main">
+    <h1>Your result:</h1>
+    <div id="box">
+        <input type="url" id="input-field" value="@ViewData["ShortenedUrl"]" readonly>
+        <button id="copy-button">Copy URL</button>
+    </div>
+    <a href="@Url.Action("Index", "Url")">Shorten 1 more URL</a>
+</div>
+
+@section Scripts {
+    <script src="~/js/site.js"></script>
+}
