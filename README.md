@@ -11,11 +11,14 @@ URL Shortener App is a simple and efficient URL shortener built with ASP.NET Cor
 
 ## Usage
 
-1. Clone the repository to your local machine. (git clone https://github.com/Artemiyqq/django-url-shortener.git)
-2. Ensure you have .NET SDK installed (version 7.0 or later).
-3. Install PostgreSQL 15 on your system.
-4. Create an empty Postgres database and user with name `entityframework` so that EntityFramework can interact with the database.
-5. Run the following SQL statements in database which u have created previously:
+1. Clone the repository to your local machine:
+   ```
+   git clone https://github.com/Artemiyqq/asp-net-mvc-url-shortener.git
+   ```
+3. Ensure you have .NET SDK installed (version 7.0 or later).
+4. Install PostgreSQL 15 on your system.
+5. Create an empty Postgres database and user with name `entityframework` so that EntityFramework can interact with the database.
+6. Run the following SQL statements in database which u have created previously:
 
   Creating the "tests" Schema:
   ```
@@ -91,4 +94,4 @@ docker pull artemiyqq/url-shortener-asp-net-mvc:latest
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/Artemiyqq/django-url-shortener/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/Artemiyqq/asp-net-mvc-url-shortener/blob/master/LICENSE.txt).
