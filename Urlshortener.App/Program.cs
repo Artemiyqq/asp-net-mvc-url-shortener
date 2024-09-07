@@ -1,11 +1,5 @@
 using UrlShortener.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.Extensions.Configuration;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc.Authorization;
 
 namespace UrlShortener
 {
@@ -50,9 +44,9 @@ namespace UrlShortener
             using AppDbContext context = new("public");
             var pendingMigrations = context.Database.GetPendingMigrations();
             if (pendingMigrations.Any()) 
-            {
+                {
                 context.Database.Migrate();
-            } 
+            }
 
             app.Run();
         }

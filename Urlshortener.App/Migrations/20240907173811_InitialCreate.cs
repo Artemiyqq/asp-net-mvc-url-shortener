@@ -3,7 +3,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace UrlShortener.Migrations
+namespace Urlshortener.App.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

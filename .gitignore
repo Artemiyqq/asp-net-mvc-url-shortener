@@ -51,3 +51,7 @@ msbuild.err
 /Urlshortener.App/appsettings.Development.json
 /Urlshortener.App/docker-compose.yml
 /Urlshortener.App/Dockerfile
+/docker-compose.yml
+/docker-compose.override.yml
+/docker-compose.dcproj
+/.dockerignore
