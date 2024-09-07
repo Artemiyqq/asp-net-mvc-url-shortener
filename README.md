@@ -39,30 +39,28 @@ If you just want to see an already working project, create a file with the name 
   version: '3.4'
   name: url-shortener
   services:
-  web:
-    image: artemiyqq/url-shortener-web:latest
-    container_name: url-shortener-web
-    ports:
-        - "51442:80"
-    depends_on:
-        db:
-          condition: service_healthy
-    environment:
-        ASPNETCORE_ENVIRONMENT: Development
-
-  db:
-    image: postgres:15
-    container_name: url-shortener-db
-    environment:
-        POSTGRES_PASSWORD: iceage
-        POSTGRES_DB: url-shortener-db
-    ports:
-        - "5431:5432"
-    healthcheck:
-        test: ["CMD-SHELL", "pg_isready -U postgres"]
-        interval: 10s
-        timeout: 5s
-        retries: 5
+      web:
+          image: artemiyqq/url-shortener-web:latest
+          container_name: url-shortener-web
+          ports:
+              - "51442:80"
+          depends_on:
+              db:
+                  condition: service_healthy
+  
+      db:
+          image: postgres:15
+          container_name: url-shortener-db
+          environment:
+              POSTGRES_PASSWORD: iceage
+              POSTGRES_DB: url-shortener-db
+          ports:
+              - "5431:5432"
+          healthcheck:
+              test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+              interval: 10s
+              timeout: 5s
+              retries: 5
   ```
 And run it with the following command in the console:
    ```
